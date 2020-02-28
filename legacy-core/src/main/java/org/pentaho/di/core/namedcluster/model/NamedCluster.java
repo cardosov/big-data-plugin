@@ -375,11 +375,13 @@ public class NamedCluster implements Cloneable, VariableSpace {
     this.storageScheme = storageScheme;
   }
 
-
+  @SuppressWarnings( "squid:S1172" )
   public String toXmlForEmbed( String rootTag ) {
     // This method should only be called on the real NamedClusterImpl
     return null;
   }
+
+  @SuppressWarnings( "squid:S1172" )
   public NamedCluster fromXmlForEmbed( Node node ) {
     // This method should only be called on the real NamedClusterImpl
     return null;
